@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context docBase="/Users/snowmo/Git/High_Level_Web_Programing/pivotal-tc-server-developer-3.2.8.RELEASE/baseInstance/wtpwebapps/lecture1" path="/lecture1" reloadable="true" source="org.eclipse.jst.jee.server:lecture1"/>
+<Context docBase="/Users/snowmo/Git/High_Level_Web_Programing/pivotal-tc-server-developer-3.2.8.RELEASE/baseInstance/wtpwebapps/lecture1" path="/lecture1" reloadable="true" source="org.eclipse.jst.jee.server:lecture1">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="10" maxTotal="50" maxWaitMillis="10000" name="jdbc/student1" password="test123" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/student1" username="user1"/>
+</Context>
