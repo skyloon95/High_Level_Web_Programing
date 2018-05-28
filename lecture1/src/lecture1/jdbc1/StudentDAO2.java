@@ -12,7 +12,7 @@ public class StudentDAO2 {
 
     public static List<Student> findAll() throws Exception {
         String sql = "SELECT s.*, d.departmentName " +
-                     "FROM student s LEFT JOIN department d ON s.departmentId = d.id";
+                     "FROM student s LEFT JOIN department d ON s.departmentId = d.id ";
         try (Connection connection = DB.getConnection("student1");
              PreparedStatement statement = connection.prepareStatement(sql);
              ResultSet resultSet = statement.executeQuery()) {
@@ -34,7 +34,7 @@ public class StudentDAO2 {
     public static List<Student> findByName(String name) throws Exception {
         String sql = "SELECT s.*, d.departmentName " +
                      "FROM student s LEFT JOIN department d ON s.departmentId = d.id " +
-                     "WHERE s.name LIKE ?";
+                     "WHERE s.name LIKE ? ";
         try (Connection connection = DB.getConnection("student1");
              PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, name + "%");

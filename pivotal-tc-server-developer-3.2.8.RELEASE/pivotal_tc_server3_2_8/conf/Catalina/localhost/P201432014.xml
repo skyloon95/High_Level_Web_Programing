@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="/Users/snow_mo/Git/High_Level_Web_Programing/pivotal-tc-server-developer-3.2.8.RELEASE/pivotal_tc_server3_2_8/wtpwebapps/P201432014" path="/P201432014" reloadable="true" source="org.eclipse.jst.jee.server:P201432014">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="10" maxTotal="50" maxWaitMillis="10000" name="jdbc/bbs2" password="test123" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/bbs2" username="user1"/>
+</Context>

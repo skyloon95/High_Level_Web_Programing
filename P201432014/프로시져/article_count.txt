@@ -1,0 +1,15 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `article_count`(
+  IN ss VARCHAR(10),
+  IN st NVARCHAR(100)
+)
+BEGIN
+
+SELECT COUNT(a.id)
+FROM bbs2.article a
+  LEFT JOIN user u ON u.id = a.userId 
+WHERE 
+  (ss = '0') OR
+  (ss = '2' AND a.title LIKE st) OR
+  (ss = '1' AND u.name LIKE st);
+
+END

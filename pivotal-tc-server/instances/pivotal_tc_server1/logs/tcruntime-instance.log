@@ -1,0 +1,1 @@
+Sun May 27 13:31:49 KST 2018 ran with arguments: create pivotal_tc_server1 -v 9.0.6.B.RELEASE -t nio --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home 
